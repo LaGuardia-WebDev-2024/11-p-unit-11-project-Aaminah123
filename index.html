@@ -1,12 +1,12 @@
 <!-- Unit 11 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ x ] $() Select by Element, ID AND Class 
+[ x ] Use Three Different jQuery Methods 
+[ x ] Add Five CSS Declarations
+[ x ] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .hide() & .show() method
+[ x ] Feature 1 - Use .hide() & .show() method
 [ no ] Feature 2 - Use .addClass() method
 [ no ] Feature 3 - Use .slideDown() method
 [ no ] Feature 4 - Use .mouseover() method
@@ -19,48 +19,131 @@ Select ONE Additional
     <meta charset="utf-8" />
     <title>Unit 11 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Felipa&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
+    <button id="mem1-button">Ms. Isohp Romatem</button>
+    <button id="mem2-button">Emmurée</button>
+    <button id="mem3-button">JILUKA</button>
+    <h1>My Top 3 Visual Kei bands!!!</h1>
     <ol>
-      <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+      <li class="first">
+        <h3 id="mem1">Ms. Isohp Romatem</h3>
+        <p id="Isohp">Ms. Isohp Romatem</p>
+        <div class="Romatem">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="band1" src="https://f4.bcbits.com/img/0017421987_10.jpg" width="700">
+              </div>
+              <div id="flip-card-back">
+                <img class="trauma" src="https://e.snmc.io/i/1200/s/2096531db259076990ec37d83e54a2dd/8052837">
+                <p id ="song1">
+                  trauma<br>
+                  Ms. Isohp Romatem<br>
+                </p>
+                <audio id="distance" controls src="trauma.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
       </li>
 
-      <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+      <li class="second">
+        <h3 id="mem2">Emmurée</h3>
+        <p id="Emmurée">Emmurée</p>
+        <div class="sou">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="band2" src="https://vk.gy/images/8188-emmur-e-group-shot.jpg" width="700">
+              </div>
+          <div id="flip-card-back2">
+            <img class="rain" src="https://m.media-amazon.com/images/I/31BpHQNd7xL._UXNaN_FMjpg_QL85_.jpg">
+            <p id ="song2">
+            rain<br>
+            Emmurée<br>
+            </p>
+                <audio id="antique" controls src="rain.mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
       </li>
 
-      <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
-      </li>
+      <li class="third">
+        <h3 id="mem3">JILUKA</h3>
+        <p id="JILUKA">JILUKA</p>
+        <div class="sena">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="band3" src="https://soundofboston.com/wp-content/uploads/2025/03/JILUKA-Pittsburgh-2025.jpg" width="700">
+              </div>
+            <div id="flip-card-back3">
+              <img class="savage" src="https://cdn-images.dzcdn.net/images/cover/dc6226bcf33db9adf825cfd347eb037d/0x1900-000000-80-0-0.jpg">
+              <p id ="song3">
+                S4VAGE<br>
+                JILUKA<br>
+              </p>
+          <audio id="black" controls src="S4VAGE.mp3"></audio>
+            </div>
+          </div>
+        </div>
+      </div>
+        </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+      $(".band1").hide();
+      $(".band2").hide();
+      $(".band3").hide();
+      $(".Romatem").hide();
+      $(".sou").hide();
+      $(".sena").hide();
+      
+      $("h1").css("color", "#d6156c");
+
 
       // ======================== Button #1
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+        $("#mem1").css("color", "black");
+        $("#Isohp").html("Ms. Isohp Romatem (미스이솝로마템) was a visual kei band from overseas. They were part of the menhera kei subgenre. They were active from 2013. <br>Members:<br>Juho(vocals and guitar)<br>Kyuho(Guitar and Chorus)<br>Geon(Bass)<br>Sangyun(Drums)<br>!!!Hover over the picture!!!");
+        $(".first").css("background", "purple");
+        $(".band1").show(1000);
+        $(".Romatem").show(3000);
       });
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+        $("#mem2").css("color", "black");
+        $("#Emmurée").html("Emmurée is an active visual kei band. They are part of the art kei, Misshitsu kei, and Nagoya kei subgenres. They have been active since 1999. <br>Members:<br>Sou(Vocals)<br>Halka(Guitars)<br>Tomo(Ex. Bass)<br>TELL(Ex. Drummer)<br>!!!Hover over the picture!!!");
+        $(".second").css("background", "white");
+        $(".band2").show(1000);
+        $(".sou").show(3000);
       });
 
       // ======================== Button #3
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-        $("#mem3").text("Coding Parties! 🎉");
+        $("#mem3").css("color", "black");
+        $("#JILUKA").html("JILUKA is an active visual kei band in Tokyo. They are part of the loud kei subgenre. They have been active since 2013.<br>Members:<br>Ricko(vocals)<br>Sena(Guitar)<br>Boogie(Bass)<br>Zyean(Drums)<br>!!!Hover over the picture!!!");
+        $(".third").css("background", "darkred")
+        $(".band3").show(1000);
+        $(".sena").show(3000);
       });
-
+    
 
     </script>
   </body>
