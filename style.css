@@ -2,11 +2,248 @@
 
 /* ======================== CSS Rule #1 */
 html {
-  background-color: white;
+  background-color: rgb(30, 255, 0);
   padding-left: 20px;
 }
 
 /* ======================== CSS Rule #2 */
 h1 {
   font-family: "Poetsen One", sans-serif;
+}
+
+
+.first {
+  font-family: "MuseoModerno", sans-serif;
+}
+
+.first h3 {
+  color: rgb(138, 19, 128);
+}
+
+
+.second {
+ font-family: "Felipa", serif;
+}
+
+.third {
+  font-family: "Holtwood One SC", serif;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  text-align: center;
+}
+
+.main {
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 700px;
+  height: 390px;
+  perspective: 1000px;
+}
+
+  .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  }
+
+  .flip-card-front, #flip-card-back {
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+  color: black;
+  }
+
+  #flip-card-back {
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+  #flip-card-back {
+  background-color: rgb(0, 0, 0);
+  color: rgb(138, 19, 128);
+  transform: rotateY(180deg);
+}
+
+.Romatem {
+  display: flex;
+  justify-content: center;
+}
+
+.trauma {
+  border: 10px solid rgb(138, 19, 128);
+  border-radius: 20px;
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  width: 200px;
+  height: 200px;
+}
+
+#song1 {
+  position:relative;
+  top: 240px;
+  left: 10px;
+}
+
+#distance {
+      display: block;
+      margin: auto;
+      width: 200px;
+      position:absolute;
+      top: 310px;
+      left: 260px;
+    }
+
+    #distance::-webkit-media-controls-panel {
+  background-color: rgb(138, 19, 128);
+}
+
+.sou {
+  display: flex;
+  justify-content: center;
+}
+
+.band2 {
+  position: absolute;
+  top: -5px;
+  left: 50px;
+  width: 600px;
+  height: 400px;
+}
+
+.rain {
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  width: 200px;
+  height: 200px;
+}
+
+#song2 {
+  position:relative;
+  top: 240px;
+  left: 10px;
+}
+
+#flip-card-back2 {
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+  #flip-card-back2 {
+  background-color: rgb(255, 255, 255);
+  border: 5px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+}
+
+ .flip-card-front, #flip-card-back2 {
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  }
+
+  #antique {
+      display: block;
+      margin: auto;
+      width: 200px;
+      position:absolute;
+      top: 310px;
+      left: 260px;
+  }
+
+    #antique::-webkit-media-controls-panel {
+  background-color: rgba(0, 0, 0, 0.726);
+}
+
+.sena {
+  display: flex;
+  justify-content: center;
+}
+
+.savage {
+  border: 10px solid rgb(255, 0, 81);
+  border-radius: 20px;
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  width: 200px;
+  height: 200px;
+}
+
+#song3 {
+  position:relative;
+  color: rgb(255, 0, 81);
+  top: 240px;
+  left: 10px;
+}
+
+#flip-card-back3 {
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+  #flip-card-back3 {
+  background-color: rgb(0, 0, 0);
+  border: 5px solid rgb(255, 0, 81)
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+  }
+
+ .flip-card-front, #flip-card-back3 {
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  }
+
+  #black {
+      display: block;
+      margin: auto;
+      width: 200px;
+      position:absolute;
+      top: 310px;
+      left: 260px;
+  }
+
+    #black::-webkit-media-controls-panel {
+  background-color: rgb(255, 0, 81);
+}
+
+.band3 {
+  height: 400px;
+  width: 650px;
 }
